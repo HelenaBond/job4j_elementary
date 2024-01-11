@@ -2,9 +2,8 @@ package ru.job4j.condition;
 
 public class TriangleArea {
     public static double area(double a, double b, double c) {
-        double semiperimeter = (a + b + c) / 2;
-        double squareDataToGeron = semiperimeter * (semiperimeter - a) * (semiperimeter - b) * (semiperimeter - c);
-        return Math.sqrt(squareDataToGeron);
+        double p = (a + b + c) / 2;
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
     public static void main(String[] args) {
