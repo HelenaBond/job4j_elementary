@@ -5,6 +5,26 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class SwitchArrayTest {
     @Test
+    void whenSwap0to3() {
+        int[] input = {1, 2, 3, 4};
+        int source = 0;
+        int destination = input.length - 1;
+        int[] actual = SwitchArray.swap(input, source, destination);
+        int[] expected = {4, 2, 3, 1};
+        assertThat(actual).containsExactly(expected);
+    }
+
+    @Test
+    void whenSwap1to4() {
+        int[] input = {1, 2, 3, 4, 5};
+        int source = 1;
+        int destination = 4;
+        int[] actual = SwitchArray.swap(input, source, destination);
+        int[] expected = {1, 5, 3, 4, 2};
+        assertThat(actual).containsExactly(expected);
+    }
+
+    @Test
     void whenSwapBorderArrayLengthIs4() {
         int[] input = {1, 2, 3, 4};
         int[] actual = SwitchArray.swapBorder(input);
