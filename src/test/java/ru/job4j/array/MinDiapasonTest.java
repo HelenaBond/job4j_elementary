@@ -34,4 +34,24 @@ public class MinDiapasonTest {
         int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenLastStartAndFinish() {
+        int[] array = new int[] {10, 2, 5, 1};
+        int start = 3;
+        int finish = 3;
+        int result = MinDiapason.findMin(array, start, finish);
+        int expected = 1;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenFirstStartAndFinish() {
+        int[] array = new int[] {10, 2, 5, 1};
+        int start = 0;
+        int finish = 0;
+        int result = MinDiapason.findMin(array, start, finish);
+        int expected = 10;
+        assertThat(result).isEqualTo(expected);
+    }
 }
