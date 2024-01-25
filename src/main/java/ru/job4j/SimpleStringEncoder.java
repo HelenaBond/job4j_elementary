@@ -1,4 +1,4 @@
-package ru.job4j.array;
+package ru.job4j;
 
 public class SimpleStringEncoder {
 
@@ -11,16 +11,15 @@ public class SimpleStringEncoder {
                 result += counter == 1 ? Character.toString(symbol) : Character.toString(symbol) + counter;
                 counter = 1;
                 symbol = input.charAt(i);
-                if (i == input.length() - 1) {
-                    result += Character.toString(symbol);
-                }
+
             } else {
-                if (i == input.length() - 1) {
-                    result += Character.toString(symbol) + (counter + 1);
-                } else {
-                    counter++;
-                }
+                counter++;
             }
+        }
+        if (counter == 1) {
+            result += Character.toString(symbol);
+        } else if (counter > 1) {
+            result += Character.toString(symbol) + counter;
         }
         return input.length() > 1 ? result : input;
     }
