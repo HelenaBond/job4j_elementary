@@ -8,16 +8,16 @@ public class SortSelectedTest {
     @Test
     public void whenSort3() {
         int[] data = new int[] {3, 4, 1};
-        int[] result = SortSelected.sort(data);
+        int[] actual = SortSelected.sort(data);
         int[] expected = new int[] {1, 3, 4};
-        assertThat(result).containsExactly(expected);
+        assertThat(actual).containsExactly(expected);
     }
 
     @Test
     public void whenSort5() {
         int[] data = new int[] {3, 4, 1, 2, 5};
-        int[] result = SortSelected.sort(data);
+        int[] actual = SortSelected.sort(data);
         int[] expected = new int[] {1, 2, 3, 4, 5};
-        assertThat(result).containsExactly(expected);
+        assertThat(actual).containsExactly(expected);
     }
 }

@@ -19,6 +19,6 @@ class FactorialTest {
         int number = 0;
         int actual = Factorial.calculate(number);
         int expected = 1;
-        assertThat(expected).isEqualTo(actual);
+        assertThat(actual).isEqualTo(expected);
     }
 }

@@ -12,7 +12,7 @@ class CounterTest {
         int finish = 10;
         int actual = Counter.sum(start, finish);
         int expected = 55;
-        assertThat(expected).isEqualTo(actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test
@@ -21,7 +21,7 @@ class CounterTest {
         int finish = 8;
         int actual = Counter.sum(start, finish);
         int expected = 33;
-        assertThat(expected).isEqualTo(actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test
@@ -30,7 +30,7 @@ class CounterTest {
         int finish = 1;
         int actual = Counter.sum(start, finish);
         int expected = 1;
-        assertThat(expected).isEqualTo(actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test
@@ -39,7 +39,7 @@ class CounterTest {
         int finish = 1;
         int actual = Counter.sum(start, finish);
         int expected = 0;
-        assertThat(expected).isEqualTo(actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test
@@ -48,7 +48,7 @@ class CounterTest {
         int finish = 10;
         int actual = Counter.sumByEven(start, finish);
         int expected = 30;
-        assertThat(expected).isEqualTo(actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test
@@ -57,7 +57,7 @@ class CounterTest {
         int finish = 8;
         int actual = Counter.sumByEven(start, finish);
         int expected = 18;
-        assertThat(expected).isEqualTo(actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test
@@ -66,7 +66,7 @@ class CounterTest {
         int finish = 1;
         int actual = Counter.sumByEven(start, finish);
         int expected = 0;
-        assertThat(expected).isEqualTo(actual);
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test
@@ -75,6 +75,6 @@ class CounterTest {
         int finish = 1;
         int actual = Counter.sumByEven(start, finish);
         int expected = -20;
-        assertThat(expected).isEqualTo(actual);
+        assertThat(actual).isEqualTo(expected);
     }
 }

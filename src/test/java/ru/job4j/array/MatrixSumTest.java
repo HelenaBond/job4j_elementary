@@ -9,9 +9,9 @@ public class MatrixSumTest {
         int[][] array = {
                 {10}
         };
-        int result = MatrixSum.sum(array);
+        int actual = MatrixSum.sum(array);
         int expected = 10;
-        assertThat(result).isEqualTo(expected);
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test
@@ -20,9 +20,9 @@ public class MatrixSumTest {
                 {1, 2},
                 {1, 2}
         };
-        int result = MatrixSum.sum(array);
+        int actual = MatrixSum.sum(array);
         int expected = 6;
-        assertThat(result).isEqualTo(expected);
+        assertThat(actual).isEqualTo(expected);
     }
 
     @Test

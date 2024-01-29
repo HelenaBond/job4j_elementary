@@ -10,8 +10,8 @@ class RectangleAreaTest {
         int expected = 2;
         int p = 6;
         double k = 2;
-        double output = RectangleArea.square(p, k);
-        assertThat(output).isEqualTo(expected, offset(0.01));
+        double actual = RectangleArea.square(p, k);
+        assertThat(actual).isEqualTo(expected, offset(0.01));
     }
 
     @Test
@@ -19,8 +19,8 @@ class RectangleAreaTest {
         double expected = 3.55;
         int p = 8;
         double k = 2;
-        double output = RectangleArea.square(p, k);
-        assertThat(output).isEqualTo(expected, offset(0.01));
+        double actual = RectangleArea.square(p, k);
+        assertThat(actual).isEqualTo(expected, offset(0.01));
     }
 
     @Test
@@ -28,7 +28,7 @@ class RectangleAreaTest {
         double expected = 1.68;
         int p = 6;
         double k = 3;
-        double output = RectangleArea.square(p, k);
-        assertThat(output).isEqualTo(expected, offset(0.01));
+        double actual = RectangleArea.square(p, k);
+        assertThat(actual).isEqualTo(expected, offset(0.01));
     }
 }

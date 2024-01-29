@@ -7,7 +7,7 @@ public class MainTest {
     @Test
     public void whenActionThenResult() {
         int excepted = 1;
-        int result = 1;
-        assertThat(result).isEqualTo(excepted);
+        int actual = 1;
+        assertThat(actual).isEqualTo(excepted);
     }
 }

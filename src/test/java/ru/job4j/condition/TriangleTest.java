@@ -10,8 +10,8 @@ class TriangleTest {
         double ab = 2.0;
         double ac = 2.0;
         double bc = 2.0;
-        boolean result = Triangle.exist(ab, ac, bc);
-        assertThat(result).isTrue();
+        boolean actual = Triangle.exist(ab, ac, bc);
+        assertThat(actual).isTrue();
     }
 
     @Test
@@ -19,7 +19,7 @@ class TriangleTest {
         double ab = 2.0;
         double ac = 2.0;
         double bc = 4.0;
-        boolean result = Triangle.exist(ab, ac, bc);
-        assertThat(result).isFalse();
+        boolean actual = Triangle.exist(ab, ac, bc);
+        assertThat(actual).isFalse();
     }
 }

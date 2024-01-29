@@ -7,32 +7,32 @@ public class RollBackArrayTest {
     @Test
     public void whenEmpty() {
         int[] input = new int[] {};
-        int[] result = RollBackArray.rollback(input);
+        int[] actual = RollBackArray.rollback(input);
         int[] expected = new int[] {};
-        assertThat(result).containsExactly(expected);
+        assertThat(actual).containsExactly(expected);
     }
 
     @Test
     public void whenOne() {
         int[] input = new int[] {1};
-        int[] result = RollBackArray.rollback(input);
+        int[] actual = RollBackArray.rollback(input);
         int[] expected = new int[] {1};
-        assertThat(result).containsExactly(expected);
+        assertThat(actual).containsExactly(expected);
     }
 
     @Test
     public void whenFull() {
         int[] input = new int[] {1, 2, 3, 4};
-        int[] result = RollBackArray.rollback(input);
+        int[] actual = RollBackArray.rollback(input);
         int[] expected = new int[] {4, 3, 2, 1};
-        assertThat(result).containsExactly(expected);
+        assertThat(actual).containsExactly(expected);
     }
 
     @Test
     public void whenTheSame() {
         int[] input = new int[] {1, 1, 1, 1};
-        int[] result = RollBackArray.rollback(input);
+        int[] actual = RollBackArray.rollback(input);
         int[] expected = new int[] {1, 1, 1, 1};
-        assertThat(result).containsExactly(expected);
+        assertThat(actual).containsExactly(expected);
     }
 }

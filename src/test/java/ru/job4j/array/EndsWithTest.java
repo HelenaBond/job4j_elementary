@@ -8,15 +8,15 @@ public class EndsWithTest {
     public void whenEndWithPrefixThenTrue() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] postfix = {'l', 'o'};
-        boolean result = EndsWith.endsWith(word, postfix);
-        assertThat(result).isTrue();
+        boolean actual = EndsWith.endsWith(word, postfix);
+        assertThat(actual).isTrue();
     }
 
     @Test
     public void whenNotEndWithPrefixThenFalse() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] postfix = {'l', 'a'};
-        boolean result = EndsWith.endsWith(word, postfix);
-        assertThat(result).isFalse();
+        boolean actual = EndsWith.endsWith(word, postfix);
+        assertThat(actual).isFalse();
     }
 }

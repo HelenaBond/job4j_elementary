@@ -7,15 +7,15 @@ class CheckTest {
     @Test
     void whenDataMonoByTrueThenTrue() {
         boolean[] data = new boolean[] {true, true, true};
-        boolean result = Check.mono(data);
-        assertThat(result).isTrue();
+        boolean actual = Check.mono(data);
+        assertThat(actual).isTrue();
     }
 
     @Test
     void whenDataNotMonoByTrueThenFalse() {
         boolean[] data = new boolean[] {true, false, true};
-        boolean result = Check.mono(data);
-        assertThat(result).isFalse();
+        boolean actual = Check.mono(data);
+        assertThat(actual).isFalse();
     }
 
     @Test

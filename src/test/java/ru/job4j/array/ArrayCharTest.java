@@ -8,15 +8,15 @@ public class ArrayCharTest {
     public void whenStartWithPrefixThenTrue() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] prefix = {'H', 'e'};
-        boolean result = ArrayChar.startsWith(word, prefix);
-        assertThat(result).isTrue();
+        boolean actual = ArrayChar.startsWith(word, prefix);
+        assertThat(actual).isTrue();
     }
 
     @Test
     public void whenNotStartWithPrefixThenFalse() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] prefix = {'H', 'i'};
-        boolean result = ArrayChar.startsWith(word, prefix);
-        assertThat(result).isFalse();
+        boolean actual = ArrayChar.startsWith(word, prefix);
+        assertThat(actual).isFalse();
     }
 }

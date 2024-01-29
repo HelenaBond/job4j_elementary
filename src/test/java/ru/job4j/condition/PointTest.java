@@ -12,8 +12,8 @@ class PointTest {
         int y1 = 0;
         int x2 = 2;
         int y2 = 0;
-        double output = Point.distance(x1, y1, x2, y2);
-        assertThat(output).isEqualTo(expected, offset(0.01));
+        double actual = Point.distance(x1, y1, x2, y2);
+        assertThat(actual).isEqualTo(expected, offset(0.01));
     }
 
     @Test
@@ -23,8 +23,8 @@ class PointTest {
         int y1 = 0;
         int x2 = 2;
         int y2 = 0;
-        double output = Point.distance(x1, y1, x2, y2);
-        assertThat(output).isEqualTo(expected, offset(0.01));
+        double actual = Point.distance(x1, y1, x2, y2);
+        assertThat(actual).isEqualTo(expected, offset(0.01));
     }
 
     @Test
@@ -34,8 +34,8 @@ class PointTest {
         int y1 = -1;
         int x2 = 2;
         int y2 = 0;
-        double output = Point.distance(x1, y1, x2, y2);
-        assertThat(output).isEqualTo(expected, offset(0.01));
+        double actual = Point.distance(x1, y1, x2, y2);
+        assertThat(actual).isEqualTo(expected, offset(0.01));
     }
 
     @Test
@@ -45,7 +45,7 @@ class PointTest {
         int y1 = 0;
         int x2 = 2;
         int y2 = 3;
-        double output = Point.distance(x1, y1, x2, y2);
-        assertThat(output).isEqualTo(expected, offset(0.01));
+        double actual = Point.distance(x1, y1, x2, y2);
+        assertThat(actual).isEqualTo(expected, offset(0.01));
     }
 }
